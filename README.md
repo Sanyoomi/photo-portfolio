@@ -1,28 +1,26 @@
-# Photo Portfolio
+# Siyu Photo Portfolio
 
 一个使用原生 HTML、CSS 和 JavaScript 构建的响应式摄影作品集。
 
 ## 功能
 
-- 响应式摄影作品墙
-- 作品分类筛选
+- 11 张真实摄影作品
+- 响应式瀑布流作品墙
+- 街拍、自然、风光、日落分类筛选
 - 点击图片打开灯箱预览
+- WebP 图片压缩与响应式 `srcset`
 - 适配手机、平板和桌面屏幕
-- SVG 占位作品，方便后续替换成真实照片
 
 ## 本地运行
 
-直接用浏览器打开 `index.html` 即可。
+直接用浏览器打开 `index.html`。
 
-## 替换照片
+## 图片说明
 
-把你的照片放到 `images` 目录中，然后修改 `index.html` 里对应的：
-
-```html
-<img src="./images/sunset.svg" alt="图片说明">
-```
-
-建议使用压缩后的 `.webp` 或 `.jpg` 文件，不要把原始 RAW 文件直接上传到 Git 仓库。
+- `images/*-card.webp`：用于作品墙的轻量版本
+- `images/*.webp`：用于灯箱的大图版本
+- 原始照片没有被修改
+- 上传版本已经移除 EXIF 信息
 
 ## 项目结构
 

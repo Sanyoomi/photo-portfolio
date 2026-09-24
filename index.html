@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="一个使用 HTML、CSS 和 JavaScript 构建的响应式摄影作品集。">
+  <meta name="description" content="Siyu Chen 的摄影作品集，记录街头、自然、风光和日落。">
   <title>Siyu Photo | 摄影作品集</title>
   <link rel="stylesheet" href="./style.css">
   <script src="./script.js" defer></script>
@@ -23,7 +23,7 @@
       <div class="hero-content">
         <p class="eyebrow">VISUAL STORIES</p>
         <h1>把光留在一瞬间</h1>
-        <p class="hero-copy">记录日落、森林、街道，以及城市里不被注意的细节。</p>
+        <p class="hero-copy">记录街头的温度、林间的光，以及每一场落日。</p>
         <a class="primary-button" href="#gallery">查看作品</a>
       </div>
     </section>
@@ -39,52 +39,88 @@
 
       <div class="filters" role="group" aria-label="作品分类">
         <button class="filter-button is-active" type="button" data-filter="all" aria-pressed="true">全部</button>
-        <button class="filter-button" type="button" data-filter="sunset" aria-pressed="false">日落</button>
+        <button class="filter-button" type="button" data-filter="street" aria-pressed="false">街拍</button>
         <button class="filter-button" type="button" data-filter="nature" aria-pressed="false">自然</button>
-        <button class="filter-button" type="button" data-filter="city" aria-pressed="false">城市</button>
+        <button class="filter-button" type="button" data-filter="landscape" aria-pressed="false">风光</button>
+        <button class="filter-button" type="button" data-filter="sunset" aria-pressed="false">日落</button>
       </div>
 
       <div class="gallery" aria-live="polite">
-        <figure class="photo-card" data-category="sunset">
-          <button class="photo-button" type="button" data-full="./images/sunset.svg" data-title="日落余晖" data-location="杭州">
-            <img src="./images/sunset.svg" alt="夕阳落在山脉后面的抽象摄影占位图" width="1200" height="800" loading="lazy">
+        <figure class="photo-card" data-category="street">
+          <button class="photo-button" type="button" data-full="./images/01-golden-walk.webp" data-title="金色归途" data-location="街拍">
+            <img src="./images/01-golden-walk-card.webp" srcset="./images/01-golden-walk-card.webp 800w, ./images/01-golden-walk.webp 1800w" sizes="(max-width: 580px) 100vw, (max-width: 860px) 50vw, 33vw" alt="傍晚金色阳光下，两位老人沿着街边行走" width="1800" height="1200" loading="lazy">
           </button>
-          <figcaption><strong>日落余晖</strong><span>杭州</span></figcaption>
+          <figcaption><strong>金色归途</strong><span>街拍</span></figcaption>
+        </figure>
+
+        <figure class="photo-card" data-category="street">
+          <button class="photo-button" type="button" data-full="./images/02-night-work.webp" data-title="夜色中的劳动者" data-location="街拍">
+            <img src="./images/02-night-work-card.webp" srcset="./images/02-night-work-card.webp 540w, ./images/02-night-work.webp 810w" sizes="(max-width: 580px) 100vw, (max-width: 860px) 50vw, 33vw" alt="夜晚树影下，两位穿橙色工作服的人推着垃圾桶穿过街道" width="810" height="1800" loading="lazy">
+          </button>
+          <figcaption><strong>夜色中的劳动者</strong><span>街拍</span></figcaption>
         </figure>
 
         <figure class="photo-card" data-category="nature">
-          <button class="photo-button" type="button" data-full="./images/forest.svg" data-title="森林晨雾" data-location="云南">
-            <img src="./images/forest.svg" alt="晨雾笼罩森林的抽象摄影占位图" width="1200" height="800" loading="lazy">
+          <button class="photo-button" type="button" data-full="./images/03-fallen-leaves.webp" data-title="秋叶与光影" data-location="自然">
+            <img src="./images/03-fallen-leaves-card.webp" srcset="./images/03-fallen-leaves-card.webp 800w, ./images/03-fallen-leaves.webp 1200w" sizes="(max-width: 580px) 100vw, (max-width: 860px) 50vw, 33vw" alt="阳光透过树木，在铺满落叶的地面投下交错阴影" width="1200" height="1800" loading="lazy">
           </button>
-          <figcaption><strong>森林晨雾</strong><span>云南</span></figcaption>
-        </figure>
-
-        <figure class="photo-card" data-category="city">
-          <button class="photo-button" type="button" data-full="./images/street.svg" data-title="雨后街道" data-location="上海">
-            <img src="./images/street.svg" alt="雨后城市街道的抽象摄影占位图" width="1200" height="800" loading="lazy">
-          </button>
-          <figcaption><strong>雨后街道</strong><span>上海</span></figcaption>
-        </figure>
-
-        <figure class="photo-card" data-category="city">
-          <button class="photo-button" type="button" data-full="./images/architecture.svg" data-title="几何建筑" data-location="重庆">
-            <img src="./images/architecture.svg" alt="现代建筑几何线条的抽象摄影占位图" width="1200" height="800" loading="lazy">
-          </button>
-          <figcaption><strong>几何建筑</strong><span>重庆</span></figcaption>
+          <figcaption><strong>秋叶与光影</strong><span>自然</span></figcaption>
         </figure>
 
         <figure class="photo-card" data-category="nature">
-          <button class="photo-button" type="button" data-full="./images/coast.svg" data-title="海岸线" data-location="青岛">
-            <img src="./images/coast.svg" alt="蓝色海岸线与浪花的抽象摄影占位图" width="1200" height="800" loading="lazy">
+          <button class="photo-button" type="button" data-full="./images/04-window-leaf.webp" data-title="窗边的落叶" data-location="自然">
+            <img src="./images/04-window-leaf-card.webp" srcset="./images/04-window-leaf-card.webp 800w, ./images/04-window-leaf.webp 1800w" sizes="(max-width: 580px) 100vw, (max-width: 860px) 50vw, 33vw" alt="石台上的一片黄叶，背景是绿色植物" width="1800" height="1201" loading="lazy">
           </button>
-          <figcaption><strong>海岸线</strong><span>青岛</span></figcaption>
+          <figcaption><strong>窗边的落叶</strong><span>自然</span></figcaption>
+        </figure>
+
+        <figure class="photo-card" data-category="nature">
+          <button class="photo-button" type="button" data-full="./images/05-ancient-trees.webp" data-title="林间树影" data-location="自然">
+            <img src="./images/05-ancient-trees-card.webp" srcset="./images/05-ancient-trees-card.webp 800w, ./images/05-ancient-trees.webp 1200w" sizes="(max-width: 580px) 100vw, (max-width: 860px) 50vw, 33vw" alt="阳光照在被苔藓覆盖的粗壮树干上" width="1200" height="1800" loading="lazy">
+          </button>
+          <figcaption><strong>林间树影</strong><span>自然</span></figcaption>
         </figure>
 
         <figure class="photo-card" data-category="sunset">
-          <button class="photo-button" type="button" data-full="./images/portrait.svg" data-title="逆光肖像" data-location="成都">
-            <img src="./images/portrait.svg" alt="逆光人物剪影的抽象摄影占位图" width="1200" height="800" loading="lazy">
+          <button class="photo-button" type="button" data-full="./images/06-sunset-ride.webp" data-title="落日飞椅" data-location="日落">
+            <img src="./images/06-sunset-ride-card.webp" srcset="./images/06-sunset-ride-card.webp 800w, ./images/06-sunset-ride.webp 1800w" sizes="(max-width: 580px) 100vw, (max-width: 860px) 50vw, 33vw" alt="金色夕阳下飞椅设施中的人物剪影" width="1800" height="1200" loading="lazy">
           </button>
-          <figcaption><strong>逆光肖像</strong><span>成都</span></figcaption>
+          <figcaption><strong>落日飞椅</strong><span>日落</span></figcaption>
+        </figure>
+
+        <figure class="photo-card" data-category="nature">
+          <button class="photo-button" type="button" data-full="./images/07-forest-light.webp" data-title="穿过树林的光" data-location="自然">
+            <img src="./images/07-forest-light-card.webp" srcset="./images/07-forest-light-card.webp 800w, ./images/07-forest-light.webp 1800w" sizes="(max-width: 580px) 100vw, (max-width: 860px) 50vw, 33vw" alt="暖色阳光穿过树林，照亮前景的野草" width="1800" height="1200" loading="lazy">
+          </button>
+          <figcaption><strong>穿过树林的光</strong><span>自然</span></figcaption>
+        </figure>
+
+        <figure class="photo-card" data-category="nature">
+          <button class="photo-button" type="button" data-full="./images/08-sunlit-leaves.webp" data-title="逆光叶片" data-location="自然">
+            <img src="./images/08-sunlit-leaves-card.webp" srcset="./images/08-sunlit-leaves-card.webp 800w, ./images/08-sunlit-leaves.webp 1800w" sizes="(max-width: 580px) 100vw, (max-width: 860px) 50vw, 33vw" alt="夕阳逆光下透亮的树叶与枝条" width="1800" height="1200" loading="lazy">
+          </button>
+          <figcaption><strong>逆光叶片</strong><span>自然</span></figcaption>
+        </figure>
+
+        <figure class="photo-card" data-category="landscape">
+          <button class="photo-button" type="button" data-full="./images/09-village-glow.webp" data-title="暮色中的村落" data-location="风光">
+            <img src="./images/09-village-glow-card.webp" srcset="./images/09-village-glow-card.webp 800w, ./images/09-village-glow.webp 1800w" sizes="(max-width: 580px) 100vw, (max-width: 860px) 50vw, 33vw" alt="暖色暮光下的村落、田野与远处群山" width="1800" height="1200" loading="lazy">
+          </button>
+          <figcaption><strong>暮色中的村落</strong><span>风光</span></figcaption>
+        </figure>
+
+        <figure class="photo-card" data-category="sunset">
+          <button class="photo-button" type="button" data-full="./images/10-dusk-hills.webp" data-title="远山落日" data-location="日落">
+            <img src="./images/10-dusk-hills-card.webp" srcset="./images/10-dusk-hills-card.webp 800w, ./images/10-dusk-hills.webp 1800w" sizes="(max-width: 580px) 100vw, (max-width: 860px) 50vw, 33vw" alt="橙红色晚霞下，远山与植物形成深色剪影" width="1800" height="1200" loading="lazy">
+          </button>
+          <figcaption><strong>远山落日</strong><span>日落</span></figcaption>
+        </figure>
+
+        <figure class="photo-card" data-category="landscape">
+          <button class="photo-button" type="button" data-full="./images/11-green-fields.webp" data-title="夏日稻田" data-location="风光">
+            <img src="./images/11-green-fields-card.webp" srcset="./images/11-green-fields-card.webp 800w, ./images/11-green-fields.webp 1800w" sizes="(max-width: 580px) 100vw, (max-width: 860px) 50vw, 33vw" alt="夏日绿色稻田、起伏山丘与远处树林" width="1800" height="1200" loading="lazy">
+          </button>
+          <figcaption><strong>夏日稻田</strong><span>风光</span></figcaption>
         </figure>
       </div>
     </section>
@@ -92,12 +128,12 @@
     <section class="about-section" id="about">
       <p class="eyebrow">ABOUT</p>
       <h2>用影像保存感受</h2>
-      <p>这里将展示我的摄影作品和学习 Web 前端的实践过程。未来可以替换成你的个人介绍、拍摄经历和联系方式。</p>
+      <p>我是 Siyu Chen，喜欢观察日常里的光线、人物和自然细节。这里记录我的摄影作品，也记录我学习 Web 前端的过程。</p>
     </section>
   </main>
 
   <footer class="site-footer" id="contact">
-    <p>© <span id="current-year"></span> Siyu Photo</p>
+    <p>© <span id="current-year"></span> Siyu Chen</p>
     <a href="https://github.com/Sanyoomi" target="_blank" rel="noreferrer">GitHub</a>
   </footer>
 
