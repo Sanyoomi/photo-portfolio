@@ -32,3 +32,7 @@
 ├── script.js
 └── README.md
 ```
+
+## 国内静态托管
+
+腾讯云 COS 部署说明和上传脚本位于 deploy/ 目录。
