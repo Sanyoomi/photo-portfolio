@@ -143,6 +143,7 @@ figcaption span { color: var(--muted); font-size: 0.72rem; letter-spacing: 0.08e
 .site-footer { padding: 100px max(24px, calc((100vw - var(--max-width)) / 2)) 38px; background: #090a0b; border-top: 1px solid var(--line); }
 .footer-top { padding-bottom: 90px; border-bottom: 1px solid var(--line); }
 .footer-top h2 { max-width: 900px; margin: 0 0 36px; }
+.footer-actions { display: flex; flex-wrap: wrap; gap: 14px; }
 .footer-link { background: transparent; border: 1px solid rgba(242,238,231,0.26); color: var(--text); }
 .footer-link:hover, .footer-link:focus-visible { color: #17120c; border-color: var(--accent-soft); }
 .footer-bottom { display: flex; align-items: center; justify-content: space-between; gap: 22px; padding-top: 26px; color: var(--muted); font-size: 0.76rem; }
