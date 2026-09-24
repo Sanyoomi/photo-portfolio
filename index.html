@@ -1,0 +1,113 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="一个使用 HTML、CSS 和 JavaScript 构建的响应式摄影作品集。">
+  <title>Siyu Photo | 摄影作品集</title>
+  <link rel="stylesheet" href="./style.css">
+  <script src="./script.js" defer></script>
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="#home" aria-label="返回首页">SIYU / PHOTO</a>
+    <nav class="site-nav" aria-label="主导航">
+      <a href="#gallery">作品</a>
+      <a href="#about">关于</a>
+      <a href="#contact">联系</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero" id="home">
+      <div class="hero-content">
+        <p class="eyebrow">VISUAL STORIES</p>
+        <h1>把光留在一瞬间</h1>
+        <p class="hero-copy">记录日落、森林、街道，以及城市里不被注意的细节。</p>
+        <a class="primary-button" href="#gallery">查看作品</a>
+      </div>
+    </section>
+
+    <section class="gallery-section" id="gallery">
+      <div class="section-heading">
+        <div>
+          <p class="eyebrow">SELECTED WORK</p>
+          <h2>精选作品</h2>
+        </div>
+        <p>点击任意作品可以放大查看。</p>
+      </div>
+
+      <div class="filters" role="group" aria-label="作品分类">
+        <button class="filter-button is-active" type="button" data-filter="all" aria-pressed="true">全部</button>
+        <button class="filter-button" type="button" data-filter="sunset" aria-pressed="false">日落</button>
+        <button class="filter-button" type="button" data-filter="nature" aria-pressed="false">自然</button>
+        <button class="filter-button" type="button" data-filter="city" aria-pressed="false">城市</button>
+      </div>
+
+      <div class="gallery" aria-live="polite">
+        <figure class="photo-card" data-category="sunset">
+          <button class="photo-button" type="button" data-full="./images/sunset.svg" data-title="日落余晖" data-location="杭州">
+            <img src="./images/sunset.svg" alt="夕阳落在山脉后面的抽象摄影占位图" width="1200" height="800" loading="lazy">
+          </button>
+          <figcaption><strong>日落余晖</strong><span>杭州</span></figcaption>
+        </figure>
+
+        <figure class="photo-card" data-category="nature">
+          <button class="photo-button" type="button" data-full="./images/forest.svg" data-title="森林晨雾" data-location="云南">
+            <img src="./images/forest.svg" alt="晨雾笼罩森林的抽象摄影占位图" width="1200" height="800" loading="lazy">
+          </button>
+          <figcaption><strong>森林晨雾</strong><span>云南</span></figcaption>
+        </figure>
+
+        <figure class="photo-card" data-category="city">
+          <button class="photo-button" type="button" data-full="./images/street.svg" data-title="雨后街道" data-location="上海">
+            <img src="./images/street.svg" alt="雨后城市街道的抽象摄影占位图" width="1200" height="800" loading="lazy">
+          </button>
+          <figcaption><strong>雨后街道</strong><span>上海</span></figcaption>
+        </figure>
+
+        <figure class="photo-card" data-category="city">
+          <button class="photo-button" type="button" data-full="./images/architecture.svg" data-title="几何建筑" data-location="重庆">
+            <img src="./images/architecture.svg" alt="现代建筑几何线条的抽象摄影占位图" width="1200" height="800" loading="lazy">
+          </button>
+          <figcaption><strong>几何建筑</strong><span>重庆</span></figcaption>
+        </figure>
+
+        <figure class="photo-card" data-category="nature">
+          <button class="photo-button" type="button" data-full="./images/coast.svg" data-title="海岸线" data-location="青岛">
+            <img src="./images/coast.svg" alt="蓝色海岸线与浪花的抽象摄影占位图" width="1200" height="800" loading="lazy">
+          </button>
+          <figcaption><strong>海岸线</strong><span>青岛</span></figcaption>
+        </figure>
+
+        <figure class="photo-card" data-category="sunset">
+          <button class="photo-button" type="button" data-full="./images/portrait.svg" data-title="逆光肖像" data-location="成都">
+            <img src="./images/portrait.svg" alt="逆光人物剪影的抽象摄影占位图" width="1200" height="800" loading="lazy">
+          </button>
+          <figcaption><strong>逆光肖像</strong><span>成都</span></figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <section class="about-section" id="about">
+      <p class="eyebrow">ABOUT</p>
+      <h2>用影像保存感受</h2>
+      <p>这里将展示我的摄影作品和学习 Web 前端的实践过程。未来可以替换成你的个人介绍、拍摄经历和联系方式。</p>
+    </section>
+  </main>
+
+  <footer class="site-footer" id="contact">
+    <p>© <span id="current-year"></span> Siyu Photo</p>
+    <a href="https://github.com/Sanyoomi" target="_blank" rel="noreferrer">GitHub</a>
+  </footer>
+
+  <dialog class="lightbox" id="lightbox">
+    <button class="lightbox-close" type="button" aria-label="关闭图片预览">×</button>
+    <img id="lightbox-image" src="" alt="">
+    <div class="lightbox-caption">
+      <strong id="lightbox-title"></strong>
+      <span id="lightbox-location"></span>
+    </div>
+  </dialog>
+</body>
+</html>

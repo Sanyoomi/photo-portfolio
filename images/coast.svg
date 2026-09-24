@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 800" role="img" aria-labelledby="title">
+  <title id="title">海岸线占位图</title>
+  <defs><linearGradient id="coast" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#cfe6ef"/><stop offset=".55" stop-color="#6fabc1"/><stop offset="1" stop-color="#245a72"/></linearGradient></defs>
+  <rect width="1200" height="800" fill="url(#coast)"/>
+  <circle cx="890" cy="185" r="76" fill="#fff8dd" opacity=".9"/>
+  <path d="M0 500C180 430 320 560 520 500s320-80 680 0v300H0Z" fill="#42849b" opacity=".72"/>
+  <path d="M0 590c190-70 360 30 550-20s390-80 650 5v225H0Z" fill="#e8f6f7" opacity=".72"/>
+  <path d="M0 680c240-60 420 25 650-15s390-45 550 10v125H0Z" fill="#174c66" opacity=".68"/>
+</svg>

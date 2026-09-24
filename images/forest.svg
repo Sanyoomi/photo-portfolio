@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 800" role="img" aria-labelledby="title">
+  <title id="title">森林晨雾占位图</title>
+  <defs><linearGradient id="mist" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#cbd8c0"/><stop offset="1" stop-color="#3f5a4a"/></linearGradient></defs>
+  <rect width="1200" height="800" fill="url(#mist)"/>
+  <g fill="#314b40" opacity=".78"><path d="M110 700 250 210 390 700Z"/><path d="M340 700 480 130 620 700Z"/><path d="M590 700 730 190 870 700Z"/><path d="M850 700 990 120 1130 700Z"/></g>
+  <g fill="#203a31" opacity=".74"><path d="M0 700 140 280 280 700Z"/><path d="M470 700 620 230 770 700Z"/><path d="M960 700 1100 270 1200 700Z"/></g>
+  <rect y="600" width="1200" height="200" fill="#dce2d5" opacity=".34"/>
+</svg>

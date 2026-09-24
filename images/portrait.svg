@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 800" role="img" aria-labelledby="title">
+  <title id="title">逆光肖像占位图</title>
+  <defs><linearGradient id="light" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#f4d39b"/><stop offset="1" stop-color="#b15142"/></linearGradient></defs>
+  <rect width="1200" height="800" fill="url(#light)"/>
+  <circle cx="860" cy="275" r="155" fill="#fff6d8" opacity=".68"/>
+  <path d="M520 760c25-190 95-305 185-305s160 115 185 305Z" fill="#242229" opacity=".9"/>
+  <ellipse cx="705" cy="330" rx="118" ry="155" fill="#242229" opacity=".9"/>
+  <path d="M590 280c20-120 105-190 220-143 78 32 98 124 72 210-16-88-63-132-134-143-71-11-125 19-158 76Z" fill="#17171d" opacity=".9"/>
+</svg>
